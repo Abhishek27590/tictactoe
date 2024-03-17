@@ -1,0 +1,59 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.wrapper{
+    width: 100vw;
+    height:100vh;
+    background: url(abstract-dark-background-with-flowing-colouful-waves.jpg);
+    background-size: cover;
+    display: grid;
+    place-items:center;
+}
+.detailsPlayer{
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.374);
+    border-radius: 1rem;
+    color:white;
+    border:1px solid white;
+}
+.ui-body{
+    background-color: rgba(255, 255, 255, 0.374);
+    width:90%;
+    max-width: 20rem;
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+    padding: 1rem;
+    border:2px solid white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.box{
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color:white;
+}
+.box.green{
+    background-color: rgba(172, 255, 47, 0.537);
+}
+.box1,.box2,.box4,.box5{
+    border-bottom: 2px solid white;
+    border-right:2px solid white;
+}
+.box3,.box6{
+    border-bottom: 2px solid white;
+}
+.box7,.box8{
+    border-right: 2px solid white;
+}
+.buttonNew{
+    scale: 0;
+}
+.buttonNew.active{
+    scale:1;
+}
